@@ -49,6 +49,18 @@ user_transactions.json
 
 SCORING METHODOLGY:
 
+Develop ML Model (Heuristic-based Scoring Model)
+Used a feature-weighted, normalized scoring system.
+
+Applied MinMaxScaler to scale features between 0 and 1.
+
+Final score calculated as:
+
+score = (weighted sum of normalized features) × 1000
+
+This acts as a transparent rule-based ML model (interpretable and production-ready).
+
+Implemented in a single script that handles everything from parsing JSON → scoring wallets → outputting results.
 Extracted 7 key features per wallet
 
 Normalized features using MinMaxScaler
